@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Additional custom styles can be added here */
+  </style>
+</head>
+
+<body>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary mt-2 ms-2" data-bs-toggle="modal" data-bs-target="#assessmentModal">
+    Book A Free Assessment
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="assessmentModal" tabindex="-1" aria-labelledby="assessmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="assessmentModalLabel">School Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="assessmentForm">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
+              <label for="name">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="tel" class="form-control" id="phone" placeholder="Phone number" name="phone" required>
+              <label for="phone">Phone</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Enter your email " name="email" required>
+              <label for="email">Email Address</label>
+            </div>
+            <div class="mb-3">
+              <label for="syllabus" class="form-label">Syllabus</label>
+              <select class="form-select" id="syllabus" required>
+                <option selected>Select Syllabus</option>
+                <option value="1">IGCSE</option>
+                <option value="2">IB</option>
+                <option value="3">A - LEVEL</option>
+                <option value="3">GCSE</option>
+                <option value="3">SABIS</option>
+                <option value="3">AP's</option>
+                <option value="3">ICSE</option>
+                <option value="3">CBSE</option>
+                <option value="3">OTHER</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <select class="form-select" id="subject" required>
+                <option selected>Select Subject</option>
+                <option value="1">English</option>
+                <option value="2">Mathematics</option>
+                <option value="3">Science</option>
+                <option value="3">Physics</option>
+                <option value="3">Biology</option>
+                <option value="3">Chemistry</option>
+                <option value="3">Economics</option>
+                <option value="3">Business Studies</option>
+                <option value="3">Low</option>
+                <option value="3">History</option>
+                <option value="3">Geography</option>
+                <option value="3">Literature</option>
+                <option value="3">Political Science</option>
+                <option value="3">Accounts</option>
+                <option value="3">Statistics</option>
+                <option value="3">Psychology</option>
+                <option value="3">Philosophy</option>
+                <option value="3">Sociology</option>
+                <option value="3">Social Studies</option>
+                <option value="3">Environmental Studies</option>
+                <option value="3">French</option>
+                <option value="3">German</option>
+                <option value="3">Spanish</option>
+                <option value="3">Latin</option>
+                <option value="3">Italian</option>
+                <option value="3">Hindi</option>
+                <option value="3">Arabic</option>
+                <option value="3">Mandarin</option>
+              </select>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // JavaScript code for handling form submission can be added here
+    // You can use JavaScript to handle form submission via AJAX or perform client-side validation
+  </script>
+</body>
+
+</html>
